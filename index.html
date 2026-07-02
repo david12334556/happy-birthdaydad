@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Днем Рождения, Папа!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button id="cyber-mode-btn" class="cyber-toggle">Включить RGB 🕶️</button>
+
+    <header class="hero-section">
+        <div class="hero-content">
+            <span class="badge">Супер Папе 39 лет</span>
+            <h1>С Днем Рождения, Папуля! 🎂</h1>
+            <p>Тебе сегодня 39, а мне 13. И это самый крутой возраст, чтобы быть на одной волне! Я создал этот сайт специально для тебя.</p>
+            
+            <div class="timer-container">
+                <p class="timer-title">Я горжусь тем, что ты мой папа уже:</p>
+                <div id="live-timer">Загрузка счетчика времени...</div>
+            </div>
+            
+            <p style="margin-top: 30px;">Листай ниже! 👇</p>
+        </div>
+    </header>
+
+    <section class="timeline-section">
+        <h2 class="section-title">История нашей команды</h2>
+        <p class="subtitle">Как мы росли вместе</p>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-img">
+                    <img src="папочка.jpg" alt="2013 год">
+                </div>
+                <div class="timeline-content">
+                    <h3>2013 год</h3>
+                    <p>Тот самый год, когда мы впервые встретились! Папа, ты взял меня на руки, и с этого момента началась история нашей банды.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-img">
+                    <img src="папа2016.jpg" alt="2016 год">
+                </div>
+                <div class="timeline-content">
+                    <h3>2016 год</h3>
+                    <p>Мне уже 3 года. Время первых совместных приколов, игр и прогулок. Ты всегда знал, как меня рассмешить .</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-img">
+                    <img src="папа2020.jpg" alt="2020 год">
+                </div>
+                <div class="timeline-content">
+                    <h3>2020 год</h3>
+                    <p>Тут я уже совсем взрослый школьник. Новые задачи, первый класс, а рядом — самый надежный и мудрый Папуля, готовый во всем помочь.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-img">
+                    <img src="папа2024.jpg" alt="2024 год">
+                </div>
+                <div class="timeline-content">
+                    <h3>2024 год</h3>
+                    <p>Мы стали настоящими друзьями. Общие интересы, мужские разговоры и приключения. Мы на одной волне, как бро!</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-img">
+                    <img src="папочка2026.jpg" alt="2026 год">
+                </div>
+                <div class="timeline-content">
+                    <h3>2026 год</h3>
+                    <p>Тебе 39, мне 13. Ты в идеальной форме, а я уже вовсю мучу сайты в VS Code. С днем рождения, лучший папа во Вселенной! 🔥</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="start-quiz-section" id="quiz-trigger-zone">
+        <div class="trigger-box">
+            <h2>А теперь финальный босс! 🎮</h2>
+            <p>Хочешь пройти официальный тест на звание Лучшего Папы во Вселенной?</p>
+            <button id="start-quiz-btn" class="main-btn">ДА, ГОТОВ! 🔥</button>
+        </div>
+    </section>
+
+    <section class="quiz-section hidden" id="quiz-display-section">
+        <div class="quiz-container">
+            <div id="quiz-block">
+                <div class="progress">Вопрос <span id="current-number">1</span> из 5</div>
+                <h3 id="question-text">Загрузка...</h3>
+                <div class="options-grid" id="options-box">
+                    </div>
+            </div>
+
+            <div id="result-block" class="hidden">
+                <h2>🎉 ТЕСТ ПРОЙДЕН! 🎉</h2>
+                <div class="score">Результат: 100% Идеальный Папа</div>
+                <p>Ты ответил правильно абсолютно на всё, потому что у лучшего папы не может быть других результатов. С праздником! ❤️</p>
+                <button id="restart-btn" class="main-btn" style="margin-top: 30px;">В начало 🏠</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="cyber-modal" class="modal-overlay hidden">
+        <div class="modal-wrapper">
+            <span class="modal-close">&times;</span>
+            <img id="modal-target-img" src="" alt="Увеличенное фото">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+
+    <div id="cyber-modal" class="modal-overlay hidden">
+        <div class="modal-wrapper">
+            <span class="modal-close">&times;</span>
+            <img id="modal-target-img" src="" alt="Увеличенное фото">
+        </div>
+    </div>
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎂</text></svg>">
+</body>
+</html>
